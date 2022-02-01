@@ -91,7 +91,7 @@ console.log(totalParts);
 console.log('9. Filling boxes with a "while" loop');
 
 let boxes = 0;
-let parts = 70;
+let parts = 572;
 
 while (parts >= 7){
   parts -= 7;
