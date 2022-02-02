@@ -42,13 +42,13 @@ console.log('6. Showing supplyChanges...');
 
 for (let i = 0; i < supplyChanges.length; i++){
   if (supplyChanges[i] > 0){
-    console.log('Added', supplyChanges[i], 'parts.');
+    console.log(`Added ${supplyChanges[i]} parts.`);
   }
   else if (supplyChanges[i] === 0) {
     console.log('No change.');
   }
   else {
-    console.log('Removed', supplyChanges[i], 'parts.');
+    console.log(`Removed ${supplyChanges[i]} parts.`);
   }
 }
 
@@ -61,13 +61,13 @@ let supplyNum = 0;
 
 for (supplyNum of supplyChanges){
   if (supplyNum > 0){
-    console.log('Added', supplyNum, 'parts.');
+    console.log(`Added ${supplyNum} parts.`);
   }
   else if (supplyNum === 0) {
     console.log('No change.');
   }
   else {
-    console.log('Removed', supplyNum, 'parts.');
+    console.log(`Removed ${supplyNum} parts.`);
   }
 }
 
@@ -97,5 +97,5 @@ while (parts >= 7){
   parts -= 7;
   boxes++;
 }
-console.log('Left over parts:', parts);
-console.log('Boxes filled:', boxes);
+console.log(`Left over parts: ${parts}`);
+console.log(`Boxes filled: ${boxes}`);
