@@ -48,7 +48,7 @@ for (let i = 0; i < supplyChanges.length; i++){
     console.log('No change.');
   }
   else {
-    console.log(`Removed ${supplyChanges[i]} parts.`);
+    console.log(`Removed ${supplyChanges[i] * -1} parts.`);
   }
 }
 
@@ -67,7 +67,7 @@ for (supplyNum of supplyChanges){
     console.log('No change.');
   }
   else {
-    console.log(`Removed ${supplyNum} parts.`);
+    console.log(`Removed ${supplyNum * -1} parts.`);
   }
 }
 
