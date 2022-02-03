@@ -90,12 +90,35 @@ console.log(totalParts);
 //    Then log how many boxes were filled, and how many parts are left over.
 console.log('9. Filling boxes with a "while" loop');
 
-let boxes = 0;
+console.log('--- Not using array ---');
+let boxNum = 0;
 let parts = 572;
 
 while (parts >= 7){
-  parts -= 7;
-  boxes++;
+   parts -= 7;
+   boxNum++;
 }
 console.log(`Left over parts: ${parts}`);
-console.log(`Boxes filled: ${boxes}`);
+console.log(`Boxes filled: ${boxNum}`);
+
+console.log('--- Using an array ---');
+// I wanted to see if I was able to write a solution using an array.
+let boxes = [];
+let numOfBoxes = 0;
+parts = 572;
+
+while (parts >= 7) {
+  parts -= 7;
+
+  switch (boxes.length) {
+    case numOfBoxes:
+      boxes.push(`box ${numOfBoxes}`)
+      break;
+
+    default:
+      break;
+  }
+  numOfBoxes++;
+}
+console.log(`Left over parts: ${parts}`);
+console.log(`Boxes filled: ${boxes.length}`);
